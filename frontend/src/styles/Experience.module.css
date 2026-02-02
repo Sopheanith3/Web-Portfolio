@@ -1,0 +1,168 @@
+.experience {
+  min-height: 100vh;
+  padding: 6rem 2rem;
+  background: #0a192f;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 0 4rem 0;
+}
+
+.experienceList {
+  display: flex;
+  flex-direction: column;
+}
+
+.experienceItem {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 0.5rem;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #112240;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #233554;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+  gap: 1rem;
+}
+
+.company {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+}
+
+.position {
+  font-size: 1.125rem;
+  color: #64ffda;
+  font-weight: 500;
+  margin: 0;
+}
+
+.period {
+  font-size: 0.95rem;
+  color: #8892b0;
+  white-space: nowrap;
+  padding-top: 0.25rem;
+}
+
+.description {
+  font-size: 1rem;
+  color: #8892b0;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.divider {
+  grid-column: 1 / -1;
+  height: 1px;
+  background: #233554;
+  margin: 1rem 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .experience {
+    padding: 4rem 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .experienceItem {
+    grid-template-columns: 60px 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem 0;
+  }
+
+  .logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .company {
+    font-size: 1.25rem;
+  }
+
+  .position {
+    font-size: 1rem;
+  }
+
+  .period {
+    font-size: 0.875rem;
+    white-space: normal;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .experience {
+    padding: 5rem 1.75rem;
+  }
+
+  .sectionTitle {
+    font-size: 2.25rem;
+  }
+
+  .experienceItem {
+    grid-template-columns: 70px 1fr;
+    gap: 1.5rem;
+  }
+
+  .logo {
+    width: 56px;
+    height: 56px;
+  }
+}
