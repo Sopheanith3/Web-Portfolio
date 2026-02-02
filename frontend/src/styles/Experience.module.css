@@ -1,7 +1,7 @@
 .experience {
   min-height: 100vh;
   padding: 6rem 2rem;
-  background: #0a192f;
+  background: #181a1b;
 }
 
 .container {
@@ -41,7 +41,7 @@
   height: 64px;
   border-radius: 8px;
   overflow: hidden;
-  background: #112240;
+  background: #23272a;
   display: flex;
   align-items: center;
   justify-content: center;

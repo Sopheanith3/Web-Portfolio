@@ -1,7 +1,7 @@
 .projects {
   min-height: 100vh;
   padding: 6rem 2rem;
-  background: #0a192f;
+  background: #181a1b;
 }
 
 .container {
@@ -32,7 +32,7 @@
 }
 
 .projectCard {
-  background: #112240;
+  background: #23272a;
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -49,7 +49,7 @@
   width: 100%;
   height: 200px;
   overflow: hidden;
-  background: #1d2d50;
+  background: #23272a;
 }
 
 .projectImage {
