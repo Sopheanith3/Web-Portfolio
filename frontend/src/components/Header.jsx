@@ -25,15 +25,11 @@ const Header = () => {
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
-        <div className={styles.logo} onClick={() => scrollToSection('home')}>
-          <span className={styles.logoText}>rph</span>
-        </div>
-
         <nav className={`${styles.nav} ${isMobileMenuOpen ? styles.open : ''}`}>
-          <a onClick={() => scrollToSection('home')} className={styles.navLink}>home</a>
-          <a onClick={() => scrollToSection('projects')} className={styles.navLink}>projects</a>
-          <a onClick={() => scrollToSection('experience')} className={styles.navLink}>experience</a>
-          <a onClick={() => scrollToSection('about')} className={styles.navLink}>about</a>
+          <a onClick={() => scrollToSection('home')} className={styles.navLink}>Home</a>
+          <a onClick={() => scrollToSection('projects')} className={styles.navLink}>Projects</a>
+          <a onClick={() => scrollToSection('experience')} className={styles.navLink}>Experience</a>
+          <a onClick={() => scrollToSection('about')} className={styles.navLink}>About</a>
         </nav>
 
         <button 
