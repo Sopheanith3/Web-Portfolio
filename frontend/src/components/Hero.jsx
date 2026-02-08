@@ -9,7 +9,7 @@ const Hero = () => {
           <div className={styles.headerText}>
             <h1 className={styles.title}>Sopheanith Ny</h1>
             <h2 className={styles.subtitle}>
-              Portfolio of a computer science student and software engineer
+              Portfolio of a Computer Science student and Software engineer
             </h2>
           </div>
           <div className={styles.profileImageSmall}>
