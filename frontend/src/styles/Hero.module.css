@@ -95,67 +95,110 @@
   width: 40px;
   height: 40px;
 }
-.socialButtons {
+
+.socialIcons {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
   margin-top: 1rem;
-}
-
-.socialBtn {
-  display: flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.875rem 1.25rem;
-  border-radius: 8px;
+}
+
+.socialIconLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
   text-decoration: none;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.socialBtn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+.socialIconLink:hover {
+  transform: translateY(-3px);
+  opacity: 0.8;
 }
 
-.icon {
-  width: 20px;
-  height: 20px;
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+  background: transparent;
 }
 
-.linkedin {
-  background: #0077b5;
+.githubIcon {
+  filter: brightness(0) invert(1);
 }
 
-.linkedin:hover {
-  background: #005885;
+.emailIconWrapper {
+  position: relative;
+  display: inline-block;
 }
 
-.github {
-  background: #6e5494;
+.emailTooltip {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(28, 31, 35, 0.98);
+  border: 1px solid #64ffda;
+  border-radius: 8px;
+  padding: 8px 12px;
+  white-space: nowrap;
+  z-index: 1000;
+  animation: tooltipFadeIn 0.15s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
 }
 
-.github:hover {
-  background: #553c7b;
+.emailTooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #64ffda;
 }
 
-.email {
-  background: #7cb342;
+.emailTooltip::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: rgba(28, 31, 35, 0.98);
+  z-index: 1;
 }
 
-.email:hover {
-  background: #5a9216;
+.tooltipText {
+  display: block;
+  font-size: 0.75rem;
+  color: #64ffda;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
 }
 
-.twitter {
-  background: #1da1f2;
+.tooltipEmail {
+  display: block;
+  font-size: 0.875rem;
+  color: #ccd6f6;
 }
 
-.twitter:hover {
-  background: #0c85d0;
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
 }
 
 .profileImageSmall {
@@ -246,14 +289,29 @@
     min-width: 100px;
   }
 
-  .socialButtons {
-    flex-direction: column;
-    width: 100%;
+  .socialIcons {
+    gap: 1.25rem;
+    justify-content: center;
   }
 
-  .socialBtn {
-    justify-content: center;
-    width: 100%;
+  .socialIcon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .emailTooltip {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    max-width: 90vw;
+    white-space: normal;
+  }
+
+  .tooltipText {
+    font-size: 0.7rem;
+  }
+
+  .tooltipEmail {
+    font-size: 0.8rem;
   }
 }
 
