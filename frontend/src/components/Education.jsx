@@ -9,7 +9,19 @@ const Education = () => {
         <h2 className={styles.sectionTitle}>Education</h2>
         
         <div className={styles.educationGrid}>
-          {/* University of Washington Tacoma */}
+          {/* University of Washington Tacoma - Master's */}
+          <div className={styles.educationItem}>
+            <div className={styles.logoContainer}>
+              <img src={uwLogo} alt="University of Washington Tacoma" className={styles.logo} />
+            </div>
+            <div className={styles.content}>
+              <p className={styles.years}>2025 – 2026</p>
+              <h3 className={styles.degree}>Master of Computer Science</h3>
+              <p className={styles.institution}>University of Washington</p>
+            </div>
+          </div>
+
+          {/* University of Washington Tacoma - Bachelor's */}
           <div className={styles.educationItem}>
             <div className={styles.logoContainer}>
               <img src={uwLogo} alt="University of Washington Tacoma" className={styles.logo} />
