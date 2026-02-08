@@ -15,7 +15,7 @@ const Education = () => {
               <img src={uwLogo} alt="University of Washington Tacoma" className={styles.logo} />
             </div>
             <div className={styles.content}>
-              <p className={styles.years}>2025 – 2026</p>
+              <p className={styles.years}>2025 – Present</p>
               <h3 className={styles.degree}>Master of Computer Science</h3>
               <p className={styles.institution}>University of Washington</p>
             </div>

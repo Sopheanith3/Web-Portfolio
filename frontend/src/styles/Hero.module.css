@@ -74,26 +74,21 @@
   gap: 1rem;
 }
 
-.techItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  background: var(--bg-secondary);
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  aspect-ratio: 1;
-}
-
-.techItem:hover {
-  background: var(--bg-tertiary);
-  transform: translateY(-3px);
-}
-
 .techIcon {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: block;
+}
+
+.nextjsIcon,
+.githubTechIcon {
+  filter: brightness(0) invert(1);
+}
+
+:root[data-theme="light"] .nextjsIcon,
+:root[data-theme="light"] .githubTechIcon {
+  filter: brightness(0) invert(0);
 }
 
 .socialIcons {
@@ -277,14 +272,19 @@
     text-align: left;
   }
 
+  .techStackTitle {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
   .techIcons {
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
     gap: 0.75rem;
   }
 
   .techIcon {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
   }
 
   .profileImageSmall {
@@ -337,9 +337,15 @@
     font-size: 1.15rem;
   }
 
+
   .techIcons {
     grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
     gap: 0.85rem;
+  }
+
+  .techIcon {
+    width: 45px;
+    height: 45px;
   }
 
   .profileImageSmall {
