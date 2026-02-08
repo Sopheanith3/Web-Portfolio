@@ -69,7 +69,7 @@ const Footer = () => {
         </nav>
 
         <p className={styles.copyright}>
-          © {currentYear} - Your Name
+          © {currentYear} - Sopheanith Ny
         </p>
       </div>
     </footer>

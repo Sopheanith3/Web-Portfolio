@@ -7,7 +7,7 @@ const Hero = () => {
         {/* Name, Subtitle and Profile Image Container */}
         <div className={styles.headerRow}>
           <div className={styles.headerText}>
-            <h1 className={styles.title}>Your Name</h1>
+            <h1 className={styles.title}>Sopheanith Ny</h1>
             <h2 className={styles.subtitle}>
               Portfolio of a computer science student and software engineer
             </h2>
@@ -27,9 +27,7 @@ const Hero = () => {
         {/* Bio Section */}
         <div className={styles.bioSection}>
           <p className={styles.bio}>
-            Graduated from University of Washington Tacoma. Currently working as a 
-            Software Engineer Intern at OCAIS, specializing in Python, TypeScript, 
-            React, Node.js, and AWS.
+            Graduated from the University of Washington Tacoma with my bachelor's degree in Computer Science in 2025, and I'm currently pursuing my master's, set to finish in 2026. Right now, I'm working as a Software Engineer Intern at Olympic Collectible AI Solutions, where I build web applications and backend systems using technologies like React, TypeScript, Python, and Node.js. I enjoy solving real problems through code—whether that's designing APIs, improving user interfaces, or making sure everything runs smoothly in production. I'm passionate about writing clean, maintainable code and collaborating with teams to ship features that actually work well for users.
           </p>
             
           <div className={styles.socialButtons}>
