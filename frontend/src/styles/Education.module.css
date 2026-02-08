@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   padding: 4rem 3rem;
-  background: #181a1b;
+  background: var(--bg-primary);
 }
 
 .container {
@@ -15,7 +15,7 @@
 .sectionTitle {
   font-size: 2rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-primary);
   margin: 0 0 3rem 0;
   text-align: left;
 }
@@ -54,14 +54,14 @@
 .years {
   font-size: 1rem;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--text-primary);
   margin: 0;
 }
 
 .degree {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--text-primary);
   margin: 0;
   line-height: 1.4;
 }
@@ -73,7 +73,7 @@
 
 .institution {
   font-size: 1rem;
-  color: #d8d8d8;
+  color: var(--text-muted);
   margin: 0;
   line-height: 1.5;
 }

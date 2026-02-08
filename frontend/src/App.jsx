@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Education from './components/Education';
@@ -8,6 +8,22 @@ import Footer from './components/Footer';
 import './styles/App.css';
 
 function App() {
+  const [theme, setTheme] = useState('dark');
+
+  useEffect(() => {
+    // Load theme from localStorage
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    setTheme(savedTheme);
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+    document.documentElement.setAttribute('data-theme', newTheme);
+  };
+
   useEffect(() => {
     // Add fade-in animation on scroll
     const observerOptions = {
@@ -33,7 +49,7 @@ function App() {
 
   return (
     <div className="app">
-      <Header />
+      <Header theme={theme} toggleTheme={toggleTheme} />
       <Hero />
       <Education />
       <Projects />

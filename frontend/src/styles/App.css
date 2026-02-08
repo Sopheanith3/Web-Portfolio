@@ -5,6 +5,41 @@
   box-sizing: border-box;
 }
 
+/* Theme Variables */
+:root[data-theme="dark"] {
+  --bg-primary: #181a1b;
+  --bg-secondary: #23272a;
+  --bg-tertiary: #2c3135;
+  --text-primary: #ffffff;
+  --text-secondary: #ccd6f6;
+  --text-tertiary: #8892b0;
+  --text-muted: #d8d8d8;
+  --accent-primary: #64ffda;
+  --accent-secondary: #54e6ca;
+  --border-color: #233554;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --card-bg: #23272a;
+  --header-bg: rgba(24, 26, 27, 0.85);
+  --header-scrolled-bg: rgba(24, 26, 27, 0.95);
+}
+
+:root[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f7fafc;
+  --bg-tertiary: #edf2f7;
+  --text-primary: #1a202c;
+  --text-secondary: #2d3748;
+  --text-tertiary: #4a5568;
+  --text-muted: #718096;
+  --accent-primary: #00b894;
+  --accent-secondary: #00a383;
+  --border-color: #e2e8f0;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --card-bg: #ffffff;
+  --header-bg: rgba(255, 255, 255, 0.85);
+  --header-scrolled-bg: rgba(255, 255, 255, 0.95);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -14,9 +49,10 @@ body {
     'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #181a1b;
-  color: #8892b0;
+  background: var(--bg-primary);
+  color: var(--text-tertiary);
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 code {
@@ -26,7 +62,7 @@ code {
 
 .app {
   min-height: 100vh;
-  background: #181a1b;
+  background: var(--bg-primary);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,27 +74,27 @@ code {
 }
 
 ::-webkit-scrollbar-track {
-  background: #181a1b;
+  background: var(--bg-primary);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #233554;
+  background: var(--border-color);
   border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #64ffda;
+  background: var(--accent-primary);
 }
 
 /* Selection Styling */
 ::selection {
-  background: #64ffda;
-  color: #0a192f;
+  background: var(--accent-primary);
+  color: var(--bg-primary);
 }
 
 ::-moz-selection {
-  background: #64ffda;
-  color: #0a192f;
+  background: var(--accent-primary);
+  color: var(--bg-primary);
 }
 
 /* Utility Classes */
