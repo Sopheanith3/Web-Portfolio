@@ -27,6 +27,7 @@ const Header = () => {
       <div className={styles.container}>
         <nav className={`${styles.nav} ${isMobileMenuOpen ? styles.open : ''}`}>
           <a onClick={() => scrollToSection('home')} className={styles.navLink}>Home</a>
+          <a onClick={() => scrollToSection('education')} className={styles.navLink}>Education</a>
           <a onClick={() => scrollToSection('projects')} className={styles.navLink}>Projects</a>
           <a onClick={() => scrollToSection('experience')} className={styles.navLink}>Experience</a>
           <a onClick={() => scrollToSection('about')} className={styles.navLink}>About</a>

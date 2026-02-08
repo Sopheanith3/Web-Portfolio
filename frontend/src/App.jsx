@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Education from './components/Education';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
@@ -34,6 +35,7 @@ function App() {
     <div className="app">
       <Header />
       <Hero />
+      <Education />
       <Projects />
       <Experience />
       <Footer />

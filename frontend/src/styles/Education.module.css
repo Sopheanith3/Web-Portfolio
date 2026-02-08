@@ -1,0 +1,144 @@
+.education {
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  padding: 4rem 3rem;
+  background: #181a1b;
+}
+
+.container {
+  max-width: 750px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 3rem 0;
+  text-align: left;
+}
+
+.educationGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.educationItem {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  animation: fadeInUp 0.8s ease;
+}
+
+.logoContainer {
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  display: block;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.years {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.degree {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.italic {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.institution {
+  font-size: 1rem;
+  color: #d8d8d8;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .education {
+    padding: 3rem 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .educationGrid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .logo {
+    width: 75px;
+    height: 75px;
+  }
+
+  .years {
+    font-size: 0.9rem;
+  }
+
+  .degree {
+    font-size: 1rem;
+  }
+
+  .institution {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .education {
+    padding: 3.5rem 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.875rem;
+  }
+
+  .educationGrid {
+    gap: 2.5rem;
+  }
+
+  .logo {
+    width: 110px;
+    height: 110px;
+  }
+}
