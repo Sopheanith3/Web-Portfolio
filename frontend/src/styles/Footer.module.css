@@ -1,7 +1,7 @@
 .footer {
   background: var(--bg-primary);
   border-top: 1px solid var(--border-color);
-  padding: 3rem 2rem;
+  padding: 2rem 2rem 1.5rem 2rem;
 }
 
 .container {
@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .socialIcons {
@@ -26,6 +26,10 @@
   height: 40px;
   color: var(--text-tertiary);
   transition: all 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
 .iconLink svg {

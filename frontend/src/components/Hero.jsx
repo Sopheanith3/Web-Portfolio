@@ -4,6 +4,7 @@ import linkedinIcon from '../assets/social_icon/LinkedIn.png';
 import githubIcon from '../assets/social_icon/github.png';
 import gmailIcon from '../assets/social_icon/gmail.png';
 import resumeIcon from '../assets/social_icon/resume.png';
+import profileImage from '../assets/edu_icon/profile.png';
 
 // Programming Language Icons
 import javascriptIcon from '../assets/prog_icon/javascript.png';
@@ -53,7 +54,7 @@ const Hero = () => {
           </div>
           <div className={styles.profileImageSmall}>
             <img 
-              src="/profile.jpg" 
+              src={profileImage} 
               alt="Profile" 
               onError={(e) => {
                 e.target.style.display = 'none';
