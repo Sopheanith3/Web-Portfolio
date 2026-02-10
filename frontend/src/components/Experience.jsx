@@ -4,35 +4,19 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      company: 'OCAIS',
+      company: 'Gradient - Olympic Collectible AI Solutions (OCAIS)',
       position: 'Software Engineer Intern',
       period: '2025 - Present',
-      logo: '/company1.png',
-      description: 'Developing scalable web applications using React, Node.js, and AWS.'
+      logo: new URL('../assets/edu_icon/gradient.png', import.meta.url).href,
+      description: ''
     },
     {
       id: 2,
-      company: 'Tech Startup Inc.',
-      position: 'Frontend Developer',
-      period: '2024 - 2025',
-      logo: '/company2.png',
-      description: 'Built responsive user interfaces and improved application performance.'
-    },
-    {
-      id: 3,
-      company: 'University of Washington',
-      position: 'Research Assistant',
-      period: '2023 - 2024',
-      logo: '/company3.png',
-      description: 'Conducted research on machine learning algorithms and data analysis.'
-    },
-    {
-      id: 4,
-      company: 'Freelance',
-      position: 'Web Developer',
-      period: '2022 - 2023',
-      logo: '/company4.png',
-      description: 'Developed custom websites and web applications for various clients.'
+      company: 'Franklin Pierce High School',
+      position: 'Teacher Assistance and Front Office Support',
+      period: 'April 2019 - May 2019',
+      logo: '/company_fp.png',
+      description: ''
     }
   ];
 
