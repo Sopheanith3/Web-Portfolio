@@ -1,6 +1,6 @@
 import styles from '../styles/Projects.module.css';
 
-const ProjectCard = ({ title, description, image, link, objectFit = 'cover' }) => {
+const ProjectCard = ({ title, description, image, objectFit = 'cover' }) => {
   return (
     <div className={styles.projectCard}>
       <div className={styles.imageWrapper}>
@@ -19,9 +19,9 @@ const ProjectCard = ({ title, description, image, link, objectFit = 'cover' }) =
       <div className={styles.cardContent}>
         <h3 className={styles.projectTitle}>{title}</h3>
         <p className={styles.projectDescription}>{description}</p>
-        <a href={link} className={styles.learnMore}>
+        {/* <a href={link} className={styles.learnMore}>
           Learn more →
-        </a>
+        </a> */}
       </div>
     </div>
   );
