@@ -6,7 +6,7 @@ const Experience = () => {
       id: 1,
       company: 'Gradient - Olympic Collectible AI Solutions (OCAIS)',
       position: 'Software Engineer Intern',
-      period: '2025 - Present',
+      period: 'August 2025 - January 2026',
       logo: new URL('../assets/edu_icon/gradient.png', import.meta.url).href,
       description: ''
     },
