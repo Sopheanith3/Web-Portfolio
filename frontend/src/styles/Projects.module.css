@@ -36,7 +36,7 @@
 
 .projectCard {
   background: var(--card-bg);
-  border-radius: 12px;
+  border-radius: 8px;
   overflow: hidden;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -44,10 +44,6 @@
   border: 1px solid var(--border-color);
 }
 
-.projectCard:hover {
-  transform: scale(1.02);
-  box-shadow: 0 10px 20px var(--shadow-color);
-}
 
 .imageWrapper {
   width: 100%;
@@ -63,9 +59,6 @@
   transition: transform 0.3s ease;
 }
 
-.projectCard:hover .projectImage {
-  transform: scale(1.05);
-}
 
 .cardContent {
   padding: 1.5rem;

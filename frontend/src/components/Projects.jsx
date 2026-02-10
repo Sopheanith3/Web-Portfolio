@@ -5,44 +5,39 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce application built with React, Node.js, and MongoDB. Features include user authentication, product management, and payment integration.',
-      image: '/project1.jpg',
+      title: 'P.A.K.S Project',
+      description: 'A comprehensive parks management and discovery platform.',
+      image: new URL('../assets/proj_icon/paks_project1.png', import.meta.url).href,
       link: '#'
     },
     {
       id: 2,
-      title: 'Task Management App',
-      description: 'Collaborative task management tool with real-time updates using WebSocket. Built with TypeScript, React, and Express.',
-      image: '/project2.jpg',
-      link: '#'
+      title: 'ReciFEED',
+      description: 'A recipe sharing and meal planning application.',
+      image: new URL('../assets/proj_icon/ReciFEED-logo.png', import.meta.url).href,
+      link: '#',
+      objectFit: 'contain'
     },
     {
       id: 3,
-      title: 'Weather Dashboard',
-      description: 'Interactive weather dashboard that displays real-time weather data from multiple APIs. Features data visualization with Chart.js.',
-      image: '/project3.jpg',
-      link: '#'
+      title: 'Book Web API',
+      description: 'RESTful API for book catalog management and search.',
+      image: new URL('../assets/proj_icon/book_webapi.png', import.meta.url).href,
+      link: '#',
+      objectFit: 'contain'
     },
     {
       id: 4,
-      title: 'Social Media Analytics',
-      description: 'Analytics platform for social media insights using Python, AWS Lambda, and React. Processes large datasets for trend analysis.',
-      image: '/project4.jpg',
+      title: 'COVID Data',
+      description: 'Interactive dashboard for COVID-19 statistics and trends.',
+      image: new URL('../assets/proj_icon/covid_data.gif', import.meta.url).href,
       link: '#'
     },
     {
       id: 5,
-      title: 'Portfolio CMS',
-      description: 'Content management system for portfolio websites with drag-and-drop interface. Built with Next.js and Strapi.',
-      image: '/project5.jpg',
-      link: '#'
-    },
-    {
-      id: 6,
-      title: 'AI Chatbot',
-      description: 'Intelligent chatbot using natural language processing and machine learning. Integrates OpenAI API for conversational AI.',
-      image: '/project6.jpg',
+      title: 'Course Map',
+      description: 'Database-driven course mapping and planning system.',
+      image: new URL('../assets/proj_icon/course_map_project.png', import.meta.url).href,
       link: '#'
     }
   ];
@@ -63,6 +58,7 @@ const Projects = () => {
               description={project.description}
               image={project.image}
               link={project.link}
+              objectFit={project.objectFit}
             />
           ))}
         </div>

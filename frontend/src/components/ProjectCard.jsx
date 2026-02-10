@@ -1,6 +1,6 @@
 import styles from '../styles/Projects.module.css';
 
-const ProjectCard = ({ title, description, image, link }) => {
+const ProjectCard = ({ title, description, image, link, objectFit = 'cover' }) => {
   return (
     <div className={styles.projectCard}>
       <div className={styles.imageWrapper}>
@@ -8,6 +8,7 @@ const ProjectCard = ({ title, description, image, link }) => {
           src={image} 
           alt={title}
           className={styles.projectImage}
+          style={{ objectFit: objectFit }}
           onError={(e) => {
             e.target.style.display = 'none';
             e.target.parentElement.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
