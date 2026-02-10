@@ -4,7 +4,7 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      company: 'Gradient - Olympic Collectible AI Solutions (OCAIS)',
+      company: 'Gradient Colletcts - Olympic Collectible AI Solutions (OCAIS)',
       position: 'Software Engineer Intern',
       period: 'August 2025 - January 2026',
       logo: new URL('../assets/edu_icon/gradient.png', import.meta.url).href,

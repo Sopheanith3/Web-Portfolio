@@ -55,6 +55,19 @@
   line-height: 1.8;
   margin: 0 0 2rem 0;
 }
+
+.bioLink {
+  color: var(--text-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.3s ease;
+  font-weight: 700;
+}
+
+.bioLink:hover {
+  color: var(--accent-primary);
+}
+
 .techStack {
   margin: 6rem 0 0 0;
 }
